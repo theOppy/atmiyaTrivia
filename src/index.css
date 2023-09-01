@@ -1,3 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300&display=swap');
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +23,56 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.handjet {
+  
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.raleway {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+/* src/components/InfiniteScroll.css */
+.infinite-scroll-container {
+  overflow: hidden;
+}
+
+.infinite-scroll-content {
+  display: flex;
+  animation: scroll 50s linear infinite; /* Adjust the animation duration as needed */
+}
+
+.item {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 5px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+.poppins {
+  font-family: 'Poppins';
+}
+
+.bg {
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+
+}
+
+.coding {
+  font-family: 'Handjet';
+}
+.cavet {
+
+  font-family: 'Caveat', cursive;
 }
